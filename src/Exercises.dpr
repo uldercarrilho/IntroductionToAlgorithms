@@ -1,13 +1,15 @@
 program Exercises;
 
 uses
-  Forms,
-  uMain in 'uMain.pas' {frmMain};
+  Vcl.Forms,
+  uMain in 'uMain.pas' {frmMain},
+  uAlgorithms in 'uAlgorithms.pas';
 
-{$R *.RES}
+{$R *.res}
 
 begin
   Application.Initialize;
+  Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.
